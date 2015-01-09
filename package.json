@@ -12,6 +12,9 @@
       "url": "https://github.com/ruyadorno/twitter-proxy.git"
   },
   "author": "Tom Ashworth <tom@phuu.net>",
+  "contributors": [
+      "Ruy Adorno (https://twitter.com/ruyadorno)"
+  ],
   "license": "MIT",
   "dependencies": {
     "oauth": "~0.9.10",
