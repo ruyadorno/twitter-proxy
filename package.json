@@ -1,17 +1,18 @@
 {
   "name": "twitter-proxy",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tiny twitter proxy.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": "",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/ruyadorno/twitter-proxy.git"
+  },
   "author": "Tom Ashworth <tom@phuu.net>",
   "license": "MIT",
-  "readmeFilename": "README.md",
-  "gitHead": "689fa8bb592de26d5a9d7510e0bc1cbe85091e63",
   "dependencies": {
     "oauth": "~0.9.10",
     "express": "~3.4.0",
