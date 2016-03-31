@@ -1,4 +1,4 @@
-# twitter-proxy
+# twitter-proxy [![NPM version](https://badge.fury.io/js/twitter-proxy.svg)](https://npmjs.org/package/twitter-proxy)
 
 > Tiny Twitter API proxy server
 
