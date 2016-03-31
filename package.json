@@ -1,6 +1,6 @@
 {
   "name": "twitter-proxy",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Tiny twitter proxy.",
   "main": "server.js",
   "scripts": {
@@ -9,12 +9,12 @@
   },
   "bin": "cli.js",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/ruyadorno/twitter-proxy.git"
+    "type": "git",
+    "url": "https://github.com/ruyadorno/twitter-proxy.git"
   },
   "author": "Tom Ashworth <tom@phuu.net>",
   "contributors": [
-      "Ruy Adorno (https://twitter.com/ruyadorno)"
+    "Ruy Adorno (https://twitter.com/ruyadorno)"
   ],
   "license": "MIT",
   "dependencies": {
