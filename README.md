@@ -29,7 +29,7 @@ Allows you to make requests to the Twitter API from the comfort of your browser.
     $ twitter-proxy ~/config.json
     ```
 
-You can now make requests to Twitter API URLs, but to `http://localhost:7890`, from your browser.
+You can now make requests to Twitter API URLs using `http://localhost:7890`.
 
 ## Programmatic API
 
