@@ -9,7 +9,7 @@ let config;
 try {
     config = require(configPath);
 } catch (e) {
-    console.error("No config file found.");
+    console.error(`Incompatible or nonexistent config file at ${ configPath }`);
     console.error(e);
     process.exit(1);
 }

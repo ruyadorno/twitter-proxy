@@ -26,10 +26,22 @@ Allows you to make requests to the Twitter API from the comfort of your browser.
 0. Run the app using the saved config: 
 
     ```sh
-    $ twitter-proxy ~/config.json
+    $ twitter-proxy ~/config.json # If installed with npm i -g
+    $ npm start ~/config.json     # If you cloned the repository
     ```
 
-You can now make requests to Twitter API URLs using `http://localhost:7890`.
+You can now make requests to Twitter APIs by substituting Twitter base URL with `http://localhost:port`, where `port`
+denotes the port that was assigned to this server. As an example, if a prior direct request to Twitter pointed to
+
+```
+https://api.twitter.com/1.1/search/tweets.json?q=%40twitterdev
+```
+
+now, having to pass through the proxy, it points to
+
+```
+http://localhost:port/1.1/search/tweets.json?q=%40twitterdev
+```
 
 ## Programmatic API
 
