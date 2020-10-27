@@ -4,11 +4,10 @@ module.exports = function startTwitterProxyServer(config) {
   /**
    * Setup the server
    */
-  var express = require('express'),
+  let express = require('express'),
       http = require('http'),
       app = express();
-
-  var proxy = require('./proxy');
+  let proxy = require('./proxy');
 
   // Save the config for use later
   app.set('config', config);
@@ -23,12 +22,15 @@ module.exports = function startTwitterProxyServer(config) {
   app.use(express.urlencoded());
   // CORS
   app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.header('Content-Type', 'application/javascript');
-    if (req.method === 'OPTIONS') return res.send(200);
-    next();
+      res.header("Access-Control-Allow-Origin", "*");
+      res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+      res.header("Access-Control-Allow-Headers", "X-Requested-With");
+      res.header('Content-Type', 'application/javascript');
+
+      if (req.method === 'OPTIONS')
+          return res.send(200);
+
+      next();
   });
 
   // Express routing
@@ -40,10 +42,8 @@ module.exports = function startTwitterProxyServer(config) {
   /**
    * Get the party started
    */
-  http
-    .createServer(app)
-    .listen(app.get('port'), function () {
-      console.log('twitter-proxy server ready: http://localhost:' + app.get('port'));
-    });
+  http.createServer(app)
+      .listen(app.get('port'), function () {
+        console.log('twitter-proxy server ready: http://localhost:' + app.get('port'));
+      });
 };
-
