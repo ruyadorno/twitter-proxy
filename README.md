@@ -32,7 +32,7 @@ Allows you to make requests to the Twitter API from the comfort of your browser.
     OR (alternatively) you might want to clone this repo instead, in this case you want to use a development workflow to install and start the proxy server:
 
     ```sh
-    git clone git@github.com:ruyadorno/twitter-proxy.git
+    $ git clone git@github.com:ruyadorno/twitter-proxy.git
     $ npm install
     $ npm start ~/config.json
     ```
