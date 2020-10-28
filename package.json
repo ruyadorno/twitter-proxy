@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node cli.js"
   },
   "bin": "cli.js",
   "repository": {
@@ -14,7 +14,8 @@
   },
   "author": "Tom Ashworth <tom@phuu.net>",
   "contributors": [
-    "Ruy Adorno (https://twitter.com/ruyadorno)"
+    "Ruy Adorno (https://twitter.com/ruyadorno)",
+    "Acsor (https://github.com/acsor/)"
   ],
   "license": "MIT",
   "dependencies": {
