@@ -1,13 +1,15 @@
 {
   "name": "twitter-proxy",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Tiny twitter proxy.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node cli.js"
   },
-  "bin": "cli.js",
+  "bin": {
+    "twitter-proxy": "cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ruyadorno/twitter-proxy.git"
